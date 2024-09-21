@@ -1,0 +1,246 @@
+.lucky-wheel-wrapper {
+    font-family: 'Arial', sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.lucky-wheel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Styles for the registration form */
+.registration-form {
+    width: 100%;
+    max-width: 300px;
+}
+
+.registration-form h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.registration-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.registration-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.registration-form button {
+    background-color: #4ecdc4;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration-form button:hover {
+    background-color: #45b7d1;
+}
+
+/* Styles for the lucky wheel */
+.lucky-wheel-game {
+    width: 100%;
+    position: relative;
+    top: 20px;
+}
+
+#lucky-wheel {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 0 10px #FFD700, 0 0 0 12px #FFA500;
+    transition: transform 5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.wheel-segment {
+    fill: #87CEEB;
+    stroke: #ffffff;
+    stroke-width: 1;
+}
+
+.wheel-segment:nth-child(even) {
+    fill: #4682B4;
+
+}
+
+.prize-text {
+    font-size: 8px;
+    font-weight: bold;
+    fill: #ffffff;
+    text-anchor: middle;
+}
+
+.wheel-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, #FFD700 0%, #FFA500 100%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.wheel-pointer {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 40px;
+    background: #FF4500;
+    clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+    z-index: 3;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.wheel-center:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 0 0 10px #f3f4f6, 0 0 0 12px #e1e5ea;
+}
+
+.wheel-center span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease;
+}
+
+.wheel-center.spinning span {
+    opacity: 0;
+}
+
+
+.pointer-base {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background: #FF4500;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.pointer-base::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background: #ffea07;
+    border-radius: 50%;
+}
+
+/* .pointer-triangle {
+    position: absolute;
+    top: 0;
+    left: 10;
+    right: 10;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid #333;
+} */
+
+
+
+.result-display {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.result-display.show {
+    animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes spin-center {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+
+.wheel-center.spinning {
+    animation: spin-center 0.5s linear infinite;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.fb-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .lucky-wheel-wrapper {
+        max-width: 800px;
+    }
+
+    .lucky-wheel-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .registration-form,
+    .lucky-wheel-game {
+        width: 48%;
+    }
+}

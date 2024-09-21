@@ -1,0 +1,88 @@
+[2024-09-21 10:22:41] [class-ss-archive-creation-job.php:83] Starting a job; no job is presently running
+[2024-09-21 10:22:41] [class-ss-archive-creation-job.php:84] Here's our task list: setup, fetch_urls, generate_404, create_zip_archive, wrapup
+[2024-09-21 10:22:41] [class-ss-archive-creation-job.php:102] Pushing first task to queue: setup
+[2024-09-21 10:22:46] [class-ss-archive-creation-job.php:136] Current task: setup
+[2024-09-21 10:22:46] [class-ss-archive-creation-job.php:153] Performing task: setup
+[2024-09-21 10:22:46] [class-ss-task.php:44] Status message: [setup] Setting up
+[2024-09-21 10:22:46] [class-ss-setup-task.php:33] Creating archive directory: /Users/nguyenhuutu/Documents/source code/Wordpress/wordpress/wp-content/uploads/simply-static/temp-files/simply-static-1-1726914161/
+[2024-09-21 10:22:46] [class-ss-setup-task.php:72] Adding origin URL to queue: http://localhost:8000/
+[2024-09-21 10:22:46] [class-ss-archive-creation-job.php:175] We've found our next task: fetch_urls
+[2024-09-21 10:22:46] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
+[2024-09-21 10:22:46] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
+[2024-09-21 10:22:46] [class-ss-fetch-urls-task.php:69] Total pages: 1; Pages remaining: 1
+[2024-09-21 10:22:46] [class-ss-fetch-urls-task.php:72] URL: http://localhost:8000/
+[2024-09-21 10:22:46] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 1
+[2024-09-21 10:22:46] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2024-09-21 10:22:46] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/folders/pb/vxq_7_h14fv5w926fkcy8brc0000gn/T/66ee9e7634bd9-Crdr62.tmp
+[2024-09-21 10:22:46] [class-ss-page-handler.php:38] URL Prepared:http://localhost:8000/?simply_static_page=6
+[2024-09-21 10:22:46] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:8000/?simply_static_page=6
+[2024-09-21 10:23:16] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2024-09-21 10:23:16] [class-ss-url-fetcher.php:106] We encountered an error when fetching: cURL error 28: Operation timed out after 30005 milliseconds with 0 bytes received
+[2024-09-21 10:23:16] [class-ss-url-fetcher.php:107] object(WP_Error)#837 (3) {  ["errors"]=>  array(1) {    ["http_request_failed"]=>    array(1) {      [0]=>      string(81) "cURL error 28: Operation timed out after 30005 milliseconds with 0 bytes received"    }  }  ["error_data"]=>  array(0) {  }  ["additional_data":protected]=>  array(0) {  }}
+[2024-09-21 10:23:16] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 0 of 1 pages/files
+[2024-09-21 10:23:16] [class-ss-archive-creation-job.php:181] We're not done with the fetch_urls task yet
+[2024-09-21 10:28:04] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
+[2024-09-21 10:28:04] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
+[2024-09-21 10:28:04] [class-ss-fetch-urls-task.php:69] Total pages: 1; Pages remaining: 0
+[2024-09-21 10:28:04] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 1 of 1 pages/files
+[2024-09-21 10:28:04] [class-ss-archive-creation-job.php:175] We've found our next task: generate_404
+[2024-09-21 10:28:04] [class-ss-archive-creation-job.php:136] Current task: generate_404
+[2024-09-21 10:28:04] [class-ss-archive-creation-job.php:153] Performing task: generate_404
+[2024-09-21 10:28:04] [class-ss-task.php:44] Status message: [generate_404] Generating 404 Page.
+[2024-09-21 10:28:04] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/folders/pb/vxq_7_h14fv5w926fkcy8brc0000gn/T/66ee9fb4e170a-4KU2X5.tmp
+[2024-09-21 10:28:04] [class-ss-page-handler.php:38] URL Prepared:http://localhost:8000/1726914485?simply_static_page=0
+[2024-09-21 10:28:04] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:8000/1726914485?simply_static_page=0
+[2024-09-21 10:28:34] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2024-09-21 10:28:34] [class-ss-url-fetcher.php:106] We encountered an error when fetching: cURL error 28: Operation timed out after 30003 milliseconds with 0 bytes received
+[2024-09-21 10:28:34] [class-ss-url-fetcher.php:107] object(WP_Error)#813 (3) {  ["errors"]=>  array(1) {    ["http_request_failed"]=>    array(1) {      [0]=>      string(81) "cURL error 28: Operation timed out after 30003 milliseconds with 0 bytes received"    }  }  ["error_data"]=>  array(0) {  }  ["additional_data":protected]=>  array(0) {  }}
+[2024-09-21 10:28:34] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/folders/pb/vxq_7_h14fv5w926fkcy8brc0000gn/T/66ee9fd2f29bb-42e4g7.tmp
+[2024-09-21 10:28:34] [class-ss-page-handler.php:38] URL Prepared:http://localhost:8000/1726914486?simply_static_page=0
+[2024-09-21 10:28:34] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:8000/1726914486?simply_static_page=0
+[2024-09-21 10:29:05] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2024-09-21 10:29:05] [class-ss-url-fetcher.php:106] We encountered an error when fetching: cURL error 28: Operation timed out after 30005 milliseconds with 0 bytes received
+[2024-09-21 10:29:05] [class-ss-url-fetcher.php:107] object(WP_Error)#837 (3) {  ["errors"]=>  array(1) {    ["http_request_failed"]=>    array(1) {      [0]=>      string(81) "cURL error 28: Operation timed out after 30005 milliseconds with 0 bytes received"    }  }  ["error_data"]=>  array(0) {  }  ["additional_data":protected]=>  array(0) {  }}
+[2024-09-21 10:29:05] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/folders/pb/vxq_7_h14fv5w926fkcy8brc0000gn/T/66ee9ff102650-7AD4LL.tmp
+[2024-09-21 10:29:05] [class-ss-page-handler.php:38] URL Prepared:http://localhost:8000/1726914487?simply_static_page=0
+[2024-09-21 10:29:05] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:8000/1726914487?simply_static_page=0
+[2024-09-21 10:29:35] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2024-09-21 10:29:35] [class-ss-url-fetcher.php:106] We encountered an error when fetching: cURL error 28: Operation timed out after 30006 milliseconds with 0 bytes received
+[2024-09-21 10:29:35] [class-ss-url-fetcher.php:107] object(WP_Error)#841 (3) {  ["errors"]=>  array(1) {    ["http_request_failed"]=>    array(1) {      [0]=>      string(81) "cURL error 28: Operation timed out after 30006 milliseconds with 0 bytes received"    }  }  ["error_data"]=>  array(0) {  }  ["additional_data":protected]=>  array(0) {  }}
+[2024-09-21 10:29:35] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/folders/pb/vxq_7_h14fv5w926fkcy8brc0000gn/T/66eea00f06c0b-IylD80.tmp
+[2024-09-21 10:29:35] [class-ss-page-handler.php:38] URL Prepared:http://localhost:8000/1726914488?simply_static_page=0
+[2024-09-21 10:29:35] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:8000/1726914488?simply_static_page=0
+[2024-09-21 10:30:05] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2024-09-21 10:30:05] [class-ss-url-fetcher.php:106] We encountered an error when fetching: cURL error 28: Operation timed out after 30002 milliseconds with 0 bytes received
+[2024-09-21 10:30:05] [class-ss-url-fetcher.php:107] object(WP_Error)#845 (3) {  ["errors"]=>  array(1) {    ["http_request_failed"]=>    array(1) {      [0]=>      string(81) "cURL error 28: Operation timed out after 30002 milliseconds with 0 bytes received"    }  }  ["error_data"]=>  array(0) {  }  ["additional_data":protected]=>  array(0) {  }}
+[2024-09-21 10:30:05] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/folders/pb/vxq_7_h14fv5w926fkcy8brc0000gn/T/66eea02d094ac-d51LYx.tmp
+[2024-09-21 10:30:05] [class-ss-page-handler.php:38] URL Prepared:http://localhost:8000/1726914489?simply_static_page=0
+[2024-09-21 10:30:05] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:8000/1726914489?simply_static_page=0
+[2024-09-21 10:30:35] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2024-09-21 10:30:35] [class-ss-url-fetcher.php:106] We encountered an error when fetching: cURL error 28: Operation timed out after 30005 milliseconds with 0 bytes received
+[2024-09-21 10:30:35] [class-ss-url-fetcher.php:107] object(WP_Error)#849 (3) {  ["errors"]=>  array(1) {    ["http_request_failed"]=>    array(1) {      [0]=>      string(81) "cURL error 28: Operation timed out after 30005 milliseconds with 0 bytes received"    }  }  ["error_data"]=>  array(0) {  }  ["additional_data":protected]=>  array(0) {  }}
+[2024-09-21 10:30:35] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/folders/pb/vxq_7_h14fv5w926fkcy8brc0000gn/T/66eea04b0c9cf-7QHfHc.tmp
+[2024-09-21 10:30:35] [class-ss-page-handler.php:38] URL Prepared:http://localhost:8000/1726914490?simply_static_page=0
+[2024-09-21 10:30:35] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:8000/1726914490?simply_static_page=0
+[2024-09-21 10:31:05] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2024-09-21 10:31:05] [class-ss-url-fetcher.php:106] We encountered an error when fetching: cURL error 28: Operation timed out after 30002 milliseconds with 0 bytes received
+[2024-09-21 10:31:05] [class-ss-url-fetcher.php:107] object(WP_Error)#853 (3) {  ["errors"]=>  array(1) {    ["http_request_failed"]=>    array(1) {      [0]=>      string(81) "cURL error 28: Operation timed out after 30002 milliseconds with 0 bytes received"    }  }  ["error_data"]=>  array(0) {  }  ["additional_data":protected]=>  array(0) {  }}
+[2024-09-21 10:31:05] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/folders/pb/vxq_7_h14fv5w926fkcy8brc0000gn/T/66eea0690fee7-NJ8omO.tmp
+[2024-09-21 10:31:05] [class-ss-page-handler.php:38] URL Prepared:http://localhost:8000/1726914491?simply_static_page=0
+[2024-09-21 10:31:05] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:8000/1726914491?simply_static_page=0
+[2024-09-21 10:31:35] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2024-09-21 10:31:35] [class-ss-url-fetcher.php:106] We encountered an error when fetching: cURL error 28: Operation timed out after 30003 milliseconds with 0 bytes received
+[2024-09-21 10:31:35] [class-ss-url-fetcher.php:107] object(WP_Error)#857 (3) {  ["errors"]=>  array(1) {    ["http_request_failed"]=>    array(1) {      [0]=>      string(81) "cURL error 28: Operation timed out after 30003 milliseconds with 0 bytes received"    }  }  ["error_data"]=>  array(0) {  }  ["additional_data":protected]=>  array(0) {  }}
+[2024-09-21 10:31:35] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/folders/pb/vxq_7_h14fv5w926fkcy8brc0000gn/T/66eea087137f1-cpO9Bi.tmp
+[2024-09-21 10:31:35] [class-ss-page-handler.php:38] URL Prepared:http://localhost:8000/1726914492?simply_static_page=0
+[2024-09-21 10:31:35] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:8000/1726914492?simply_static_page=0
+[2024-09-21 10:32:05] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2024-09-21 10:32:05] [class-ss-url-fetcher.php:106] We encountered an error when fetching: cURL error 28: Operation timed out after 30003 milliseconds with 0 bytes received
+[2024-09-21 10:32:05] [class-ss-url-fetcher.php:107] object(WP_Error)#861 (3) {  ["errors"]=>  array(1) {    ["http_request_failed"]=>    array(1) {      [0]=>      string(81) "cURL error 28: Operation timed out after 30003 milliseconds with 0 bytes received"    }  }  ["error_data"]=>  array(0) {  }  ["additional_data":protected]=>  array(0) {  }}
+[2024-09-21 10:32:05] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/folders/pb/vxq_7_h14fv5w926fkcy8brc0000gn/T/66eea0a516a19-x9vPwz.tmp
+[2024-09-21 10:32:05] [class-ss-page-handler.php:38] URL Prepared:http://localhost:8000/1726914493?simply_static_page=0
+[2024-09-21 10:32:05] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:8000/1726914493?simply_static_page=0
+[2024-09-21 10:32:35] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2024-09-21 10:32:35] [class-ss-url-fetcher.php:106] We encountered an error when fetching: cURL error 28: Operation timed out after 30005 milliseconds with 0 bytes received
+[2024-09-21 10:32:35] [class-ss-url-fetcher.php:107] object(WP_Error)#865 (3) {  ["errors"]=>  array(1) {    ["http_request_failed"]=>    array(1) {      [0]=>      string(81) "cURL error 28: Operation timed out after 30005 milliseconds with 0 bytes received"    }  }  ["error_data"]=>  array(0) {  }  ["additional_data":protected]=>  array(0) {  }}
+[2024-09-21 10:32:35] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /var/folders/pb/vxq_7_h14fv5w926fkcy8brc0000gn/T/66eea0c318e94-lnoerf.tmp
+[2024-09-21 10:32:35] [class-ss-page-handler.php:38] URL Prepared:http://localhost:8000/1726914494?simply_static_page=0
+[2024-09-21 10:32:35] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:8000/1726914494?simply_static_page=0
